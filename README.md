@@ -2,13 +2,12 @@
 
 A small REST API for managing personal notes.
 
-Chưa sửa main.py.
+Đã remove trùng lắp trong main.py với routers/notes.py.
 
-Do đó notes.py mới chỉ được tạo ra, nhưng main.py chưa include router này.
+Tạo mới services/note_service.py - copy the existing database CRUD logic from app/routers/notes.py into note_service.py 
 
-Vì vậy đừng xóa các endpoint /notes trong main.py và cũng chưa cần test lại toàn bộ API lúc này.
+Chưa delete  CRUD logic from app/routers/notes.py
 
-Bước tiếp theo của chúng ta sẽ là 7C: tạo app/services/note_service.py
 
 **Planned stack:** Python, FastAPI, SQLite, SQLAlchemy
 
@@ -37,7 +36,7 @@ Chi tiết:
 -Scope Process: Chỉ áp dụng chính sách này cho phiên làm việc hiện tại (cửa sổ Terminal/PowerShell đang mở). Khi bạn tắt cửa sổ này đi, thiết lập sẽ tự mất và không làm ảnh hưởng đến bảo mật chung của hệ thống Windows.
 -ExecutionPolicy RemoteSigned: Cho phép chạy các script do bạn tự tạo ở máy cục bộ (local). Các script tải từ Internet về thì phải có chữ ký số an toàn mới được chạy.
 
-2. & k:\son\AI-Systems\project-00-notes-api\.venv\Scripts\Activate.ps1
+1. & k:\son\AI-Systems\project-00-notes-api\.venv\Scripts\Activate.ps1
 Mục đích: Kích hoạt môi trường ảo Python (Virtual Environment).
 Chi tiết:
 & (Call operator): Dùng để thực thi một file script hoặc lệnh theo đường dẫn.
