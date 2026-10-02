@@ -6,6 +6,11 @@ A small REST API for managing personal notes.
 
 Tạo mới services/note_service.py - copy the existing database CRUD logic from app/routers/notes.py into note_service.py 
 
+Đã
+from app.routers.notes import router
+app.include_router(router)
+để main connect với router trong routers/notes.py
+
 Chưa delete  CRUD logic from app/routers/notes.py
 
 
