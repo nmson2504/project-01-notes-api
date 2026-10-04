@@ -70,6 +70,8 @@ Note schema
   ▼
 JSON response
 
+Router lo HTTP, Service lo xử lý, Model lo Database, Schema lo dữ liệu API, Database lo lưu trữ, còn main.py lắp ráp tất cả lại.
+
 **Planned stack:** Python, FastAPI, SQLite, SQLAlchemy
 
 The finished API will let you create, read, update, and delete notes over HTTP. Notes will be stored locally in SQLite. This step only sets up Git-friendly project files; application code comes later.
