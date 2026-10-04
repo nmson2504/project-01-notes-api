@@ -10,10 +10,11 @@ Tạo mới services/note_service.py - copy the existing database CRUD logic fro
 from app.routers.notes import router
 app.include_router(router)
 để main connect với router trong routers/notes.py
+Connect notes.py toi note_service.py
 
 Chưa 
 Delete  CRUD logic from app/routers/notes.py
-Connect voi services/note_service.py
+
 
 **Planned stack:** Python, FastAPI, SQLite, SQLAlchemy
 
