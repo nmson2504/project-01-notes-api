@@ -1,5 +1,5 @@
 # Personal Notes API
-
+V1
 A small REST API for managing personal notes.
 
 Đã remove trùng lắp trong main.py với routers/notes.py.
