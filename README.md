@@ -15,6 +15,60 @@ Connect notes.py toi note_service.py
 Chưa 
 Delete  CRUD logic from app/routers/notes.py
 
+                    main.py
+                       │
+                       │ include_router()
+                       ▼
+              ┌─────────────────┐
+              │  Router Layer   │
+              │ routers/notes.py│
+              └────────┬────────┘
+                       │
+                       │ note_service.*
+                       ▼
+              ┌─────────────────┐
+              │ Service Layer   │
+              │note_service.py  │
+              └────────┬────────┘
+                       │
+                       │ SQLAlchemy
+                       ▼
+              ┌─────────────────┐
+              │  Model Layer    │
+              │   NoteModel      │
+              └────────┬────────┘
+                       │
+                       ▼
+                    SQLite
+
+
+Client
+  │
+  ▼
+NoteCreate
+  │
+  ▼
+Router
+  │
+  ▼
+Service
+  │
+  ▼
+NoteModel
+  │
+  ▼
+SQLite
+
+SQLite
+  │
+  ▼
+NoteModel
+  │
+  ▼
+Note schema
+  │
+  ▼
+JSON response
 
 **Planned stack:** Python, FastAPI, SQLite, SQLAlchemy
 
