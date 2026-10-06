@@ -80,6 +80,11 @@ The finished API will let you create, read, update, and delete notes over HTTP. 
 Active venv
 .\venv\Scripts\Activate.ps1
 
+Git Bash là:
+source venv/Scripts/activate
+Hoặc viết tắt:
+. venv/Scripts/activate
+
 Uvirorn
 uvicorn main:app --reload
 
